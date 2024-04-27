@@ -1,23 +1,27 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Error404 from 'containers/errors/Error404';
-import Home from 'containers/pages/home';
+/* here we manage all our routes */
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import store from "store";
+import {Provider} from 'react-redux';
+import Error404 from "containers/errors/Error404";
+import Home from "containers/pages/Home";
+
 
 
 
 function App() {
   return (
-   
-    <Router>
-      <Routes>
-        {/* Error display */}
-        <Route path='*' element={<Error404 />} />
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          {/* Error display */}
+          <Route path="*" element={<Error404/>} />
 
-        <Route path='/' element={<Home/>} />
+          {/* home display */}
+          <Route path="/" element={<Home/>} />
 
-
-      </Routes>
-    </Router>
-
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 

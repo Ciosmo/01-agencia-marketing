@@ -1,8 +1,10 @@
-function Error404 (){
+function Error404(){
     return (
         <div>
-            Error 404
+            Error
         </div>
+
     )
 }
-export default Error404;
+
+export default Error404
