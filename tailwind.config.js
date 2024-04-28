@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "wine-btn": "#8E0004",
+        "yellowish-hover": "#E0B864",
+      }
+    },
   },
   plugins: [],
 }
