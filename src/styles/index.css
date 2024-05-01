@@ -26,3 +26,17 @@
     opacity: 10px;
     border-radius: 10px;
 }
+.rec.rec-arrow{
+    background-color: #0B1014;
+    color: #eeeeee;
+}
+.rec.rec-arrow:hover{
+    background-color: #393b3f;
+}
+.rec.rec-arrow:disabled{
+    visibility: hidden;
+}
+.rec-carousel-item:focus{
+    outline: none;
+}
+
