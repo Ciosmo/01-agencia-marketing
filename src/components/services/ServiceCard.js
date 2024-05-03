@@ -19,7 +19,7 @@ function ServiceCard({data, index}){
                 <p className="text-lg font-regular text-gray-500 pt-4">{data.title}</p>
             </div>
             <div className="absolute bottom-0 left-0 p-8">
-                <h2 id={index}className="items-end text-xl font-semibold text-gray-900 pt-8">Learn more</h2>
+                <h2 id={index} className="items-end text-xl font-semibold text-gray-900 pt-8">Learn more</h2>
             </div>
         </div>
     )

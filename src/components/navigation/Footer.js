@@ -1,7 +1,7 @@
 
 import {connect} from 'react-redux';
-import luffy from 'assets/img/logo.png';
 
+import programChimp from 'assets/img/logo-programChimp.png';
 
 
 
@@ -105,7 +105,7 @@ function Footer(){
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
                       <img 
-                        src={luffy} 
+                        src={programChimp} 
                         width={140}
                         height={120}
                       />

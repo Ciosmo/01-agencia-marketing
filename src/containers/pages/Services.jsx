@@ -3,6 +3,7 @@ import Navbar from 'components/navigation/Navbar';
 import Header from 'components/services/Header';
 import ServicesList from 'components/services/ServicesList';
 import Layout from 'hocs/layouts/Layout';
+import { useEffect } from 'react';
 
 
 const posts_software = [
@@ -119,6 +120,9 @@ const posts_design = [
   ]
 
 function Services(){
+    useEffect(() => {
+      window.scrollTo(0,0)
+    },[])
     return (
         <Layout>
             <Navbar />
